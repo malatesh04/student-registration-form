@@ -7,34 +7,34 @@
 </head>
 
 <body>
-  <h1 style="text-align: center; color: darkblue;">Student Registration Form</h1>
+  <h1 style="text-align: center; color: darkblue;"><u>Student Registration Form</u></h1>
   <fieldset>
     <br>
     <legend style="color: blue;">Registration Details</legend>
     <br>
     <form autocomplete="on" method="post">
-      <label for="name" style="color: Black;">Full name :</label>
+      <label for="name" style="color: Black;">Full name :<span style="color: red;">*</span></label>
       <input id="name" type="text" required="1" placeholder="enter your full name" name="full name">
       <br>
       <br>
-      <label for="pass">email :</label>
+      <label for="pass">email :<span style="color: red;">*</span></label>
       <input id="email" type="email" required="1" placeholder="enter your email" name="email">
       <br>
       <br>
-      <label for="pass">Password :</label>
+      <label for="pass">Password :<span style="color: red;">*</span></label>
       <input id="pass" type="password" required="1" placeholder="enter password" name="password">
       <br>
       <br>
-      <label for="tel"></label>Number :</label>
+      <label for="tel"></label>Number :<span style="color: red;">*</span></label>
       <input id="tel" type="tel" required="1" placeholder="enter your valid number" name="number">
       <br>
       <br>
       <label for="Website">Website :</label>
-      <input id="Website" type="url" required="0" placeholder="enter your website url" name="website">
+      <input id="Website" type="url" placeholder="enter your website url" name="website">
       <br>
       <br>
       <label for="s">search course :</label>
-      <input id="s" type="search" required="0" placeholder="search any thing" name="course">
+      <input id="s" type="search" placeholder="search any thing" name="course">
   </fieldset>
   <br>
   <br>
@@ -42,25 +42,25 @@
     <br>
     <legend style="color: blue;">Personal Details</legend>
     <br>
-    <label for="age">Age :</label>
-    <input id="age" type="number" placeholder="age" min="1" max="150" name="age">
+    <label for="age">Age :<span style="color: red;">*</span></label>
+    <input id="age" type="number" placeholder="age" min="1" max="150" name="age" required>
     <br>
     <br>
-    <label for="dae">Date :</label>
-    <input id="dae" type="date" name="date">
+    <label for="dae">Date :<span style="color: red;">*</span></label>
+    <input id="dae" type="date" name="date" required>
     <br>
     <br>
     <label for="date">Date and Time :</label>
-    <input id="date" type="datetime-local" name="datetime-local">
+    <input id="date" type="datetime-local" name="datetime-local" required="0">
     <br>
     <br>
     <label for="time">Prefered Time :</label>
     <input id="time" type="time" name="time">
     <br>
     <br>
-    <label for="ge">Gender :</label>
-    <input id="ge" type="radio" name="gender" value="Male" name="gender">Male
-    <input id="ge" type="radio" name="gender" value="Female" name="gender">Female
+    <label for="ge">Gender :<span style="color: red;">*</span></label>
+    <input id="ge" type="radio" name="gender" value="Male" name="gender" required>Male
+    <input id="ge" type="radio" name="gender" value="Female" name="gender" required>Female
     <br>
     <br>
     <label for="ho">Hobbies :</label>
@@ -84,8 +84,8 @@
     <br>
     <legend style="color: blue;">Feedback</legend>
     <br>
-    <lable>department</lable>
-    <select name="department">
+    <lable>department<span style="color: red;">*</span></lable>
+    <select name="department" required>
       <option value="ECE">ECE</option>
       <option value="CSD">CSD</option>
       <option value="CSE">CSE</option>
